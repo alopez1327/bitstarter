@@ -3,14 +3,19 @@ var fs = require('fs');
 
 var app = express.createServer(express.logger());
 
-// Use the root and the /media directory, later on
-// add a css and js directories to leave the html alone
-// However. I'll need to check if this impacts performance
+// To give structure to the web app first we need to separate
+// the static & public files from the dynamic & private ones
+// After reading a lot in the web this is the best solution
+//
 app.use(app.router);
-app.use(express.static(__dirname + '/media/'));
+app.use('/public', express.static(__dirname + '/public/'));
 
 app.get('/', function(request, response) {
-    var buffer = fs.readFileSync('index.html');
+//
+// Note that now we need to read the index from the public
+// folder.
+//
+    var buffer = fs.readFileSync('./public/index.html');
     response.send(buffer.toString('utf-8'));
 });
 

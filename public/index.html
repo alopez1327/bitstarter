@@ -5,102 +5,23 @@
         <title>Mutable Learning</title>
         <!-- Added from the HW4 description -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Load remote stylesheets -->
-        <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+        <!-- Load the stylesheets -->
+        <link rel="stylesheet" type="css/text" href="/public/css/bootstrap-combined.no-icons.min.css">
+        <link rel="stylesheet" href="/public/css/social-buttons.css">
+        <link rel="stylesheet" href="/public/css/BaseStyle.css">
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-        <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
         <!-- Load some fonts from google -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" type="text/css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic" type="text/css">
-        <!-- Load the startup version of jQuery and bootstrap -->
-        <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-        <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+        <!-- Load jQuery and bootstrap -->
+        <script src="/public/js/jquery-1.10.2.min.js"></script>
+        <script src="/public/js/bootstrap.min.js"></script>
         <!-- Define the style inside the same html file, will put this into another file later -->
-        <style type="text/css">
-            /* Large desktop */
-            @media (min-width: 980px) {
-                body {
-                    padding-top: 60px;
-                }
-                .linediv-l {
-                    border-right: 1px white solid;
-                }
-                .linediv-r {
-                    border-left: 1px white solid;
-                }
-            }
-            /* Landscape phones and down */
-            @media (max-width: 480px) {
-                .copy {
-                    padding: 2.5% 10%;
-                }
-                .linediv-l {
-                    border-bottom: 1px white solid;
-                }
-                .linediv-r {
-                    border-top: 1px white solid;
-                }
-            }
-            /* All form factors */
-            /* Main body and headings */
-            body{
-                font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-            }
-            .heading, .subheading{
-                font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-                text-align: center;
-            }
-            p.lead {
-             padding-top: 1.5%;
-             font-size: 24px;
-             line-height: 30px;
-            }
-            p {
-             font-size: 18px;
-             line-height: 24px;
-            }
-            /* Video, pitch, and actions */
-            .pitch {
-                padding: 2.5% 0%;
-            }
-            .order {
-                padding: 2% 0%;
-            }
-            .actions {
-                background-color:#343434;
-                padding: 3% 0%;
-            }
-            .video, .thermometer, .order, .social, .statistics {
-              text-align: center;
-            }
-            .statistics h3, .statistics p {
-                color: white;
-            }
-            /* Marketing, copy, and footer*/
-            .copy {
-                padding-top: 2.5%;
-                padding-bottom: 2.5%;
-                text-align: justify;
-            }
-            .asset {
-                padding: 2.5% 0%;
-            }
-            .footer {
-                color: #CCCCCC;
-                text-align: center;
-            }
-            .footer p{
-                font-size: 11px;
-            }
-            .footer a{
-                color: #CCCCFF;
-            }
-        </style>
     </head>
     
     <body>
-        <!-- Mobile-friendly navbar adapted from example. -->
-        <!-- http://twitter.github.io/bootstrap/examples/starter-template.html  -->
+        <!-- Mobile-friendly navbar adapted from:
+       http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -142,7 +63,7 @@
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img src="Intro.png" alt="Introduction"/>
+          <img src="/public/img/Intro.png" alt="Introduction"/>
         </div>
 
         <!-- Define a new 'actions' div to contain statistics, order, and share buttons-->
@@ -199,11 +120,11 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img src="Problem.png" alt="The problem">
+          <img src="/public/img/Problem.png" alt="The problem">
         </div>
         <div class="span5 copy">
           <p>
-            Studies have shown that we all learn in different ways, through <i>concrete experiences</i>, <i>abstract conceptualization</i>, some of us are <i>visual</i> learners, others are <i>auditory</i> learners. Thus the question arises, <i><b> Why not transform and complement the traditional class materials with those learning elements that help us understand and master a particular topic? Why not seek help from our peers in a systematic way?</i></b>
+            Studies have shown that we all learn in different ways, through concrete experiences, abstract conceptualization, some of us are visual learners, or auditory learners. Thus the question arises, <i><b> Why not transform and complement the traditional class materials with those learning elements that help us understand and master a particular topic? Why not seek help from our peers in a systematic way?</i></b>
           </p>
         </div>
       </div>
@@ -217,7 +138,7 @@
           </p>
         </div>
         <div class="span5 asset">
-          <img src="Solution.png" alt="The solution">
+          <img src="/public/img/Solution.png" alt="The solution">
         </div>
       </div>
 
