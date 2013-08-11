@@ -1,4 +1,4 @@
 bitstarter
 ==========
 
-Used for the Startup Engineering class in Coursera.
+This is the new version of the bitstarter. It adds recording of orders into a database.
