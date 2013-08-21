@@ -5,7 +5,7 @@
     <title>Orders</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Load the stylesheets -->
-    <link rel="stylesheet" type="css/text" href="/public/css/bootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" type="css/text" href="/public/css/bootstrap.min.css">
     <link rel="stylesheet" href="/public/css/BaseStyle.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <!-- Load some fonts from google -->
@@ -44,9 +44,11 @@
       <h2>Coinbase orders</h2>
       <table class="table table-striped">
         <thead>
-          <th>Coinbase ID</th>
-          <th>BTC</th>
-          <th>Transaction time</th>
+            <tr>
+                <th>Coinbase ID</th>
+                <th>BTC</th>
+                <th>Transaction time</th>
+            </tr>
         </thead>
         <tbody>
           <% for(var i=0; i<orders.length; i++) {%>
@@ -58,6 +60,17 @@
              <% } %>
       </table>
       <a href="/refresh_orders">Refresh orders from coinbase</a>
+      <br><br>
     </div>
+    <!-- Put this under a CC By-SA 3.0 license. -->
+    <!-- http://creativecommons.org/licenses/ -->
+      <div class="row-fluid footer">
+        <div class="span12">
+          <p>This work is licensed under
+            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+              By-SA 3.0
+            </a></p>
+        </div>
+      </div>
   </body>
 </html>
