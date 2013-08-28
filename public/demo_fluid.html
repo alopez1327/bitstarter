@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'> 
+        <title>Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Load the stylesheets -->
+        <link rel="stylesheet" type="css/text" href="/public/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/public/css/BaseStyle.css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+        <!-- Load some fonts from google -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" type="text/css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic" type="text/css">
+        <!-- Load jQuery and bootstrap -->
+            <script src="/public/js/jquery-1.10.2.min.js"></script>
+            <script src="/public/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+        <!-- First add the mobile friendly navigation bar -->
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="/public/index.html">
+                Mutable Learning</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="/public/index.html">Home</a></li>
+                        <li><a href="/public/about.html">About us</a></li>
+                        <li><a href="/orders">Orders</a></li>
+                        <li class="active"><a href="#">Demo</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+                </div> <!-- Container -->
+            </div>
+        </div>
+            <!-- Now add the content -->
+            <!-- These are the media input fields -->
+            <div class="container-fluid">
+                <div class="span12">
+                    <div class="inputForm">
+                        <div class="input-prepend">
+                            <div class="btn-group">
+                                <button class="btn dropdown-toggle" data-toggle="dropdown"
+                                    id="mediaOne">
+                                    Type
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">URL</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">file</a>
+                                    </li>
+                                </ul>
+                            </div><!-- Button -->
+                            <span class="add-on">http://</span>
+                            <input class="span2" id="prependedDropdownButton" type="text" placeholder="Media pane 1">
+                        </div><!--/Input pre-pend-->
+                        <div class="input-prepend">
+                            <div class="btn-group">
+                                <button class="btn dropdown-toggle" data-toggle="dropdown"
+                                    id="mediaTwo">
+                                    URL
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">URL</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Video</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pdf</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Audio</a>
+                                    </li>
+                                </ul>
+                            </div><!-- Button -->
+                            <input class="span2" id="prependedDropdownButton" type="text" placeholder="Media pane 2">
+                        </div><!--/Input pre-pend-->
+                        <div class="input-prepend">
+                            <div class="btn-group">
+                                <button class="btn dropdown-toggle" data-toggle="dropdown"
+                                    id="mediaThree">
+                                    URL
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">URL</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Video</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pdf</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Audio</a>
+                                    </li>
+                                </ul>
+                            </div><!-- Button -->
+                            <input class="span2" id="prependedDropdownButton" type="text">
+                        </div><!--/Input pre-pend-->
+                        <div class="input-prepend">
+                            <div class="btn-group">
+                                <button class="btn dropdown-toggle" data-toggle="dropdown"
+                                    id="mediaFour">
+                                    URL
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">URL</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Video</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pdf</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Audio</a>
+                                    </li>
+                                </ul>
+                            </div><!-- Button -->
+                            <input class="span2" id="prependedDropdownButton" type="text">
+                        </div><!--/Input pre-pend-->
+                    </div><!--/inputForm-->
+                </div><!--/span12 -->
+            </div><!--/container-fluid-->
+            
+            <!-- Now add the actual media panes -->
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <div class="hero-unit"></div>
+                            </div><!--/span6-->
+                            <div class="span6">
+                                <div class="hero-unit"></div>
+                            </div><!--/span6-->
+                        </div><!--/row-fluid-->
+                    </div><!--/span12-->
+                </div><!--/row-fluid -->
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <div class="hero-unit"></div>
+                            </div><!--/span6-->
+                            <div class="span6">
+                                <div class="hero-unit"></div>
+                            </div><!--/span6-->
+                        </div><!--/row-fluid-->
+                    </div><!--/span12-->
+                </div><!--/row-fluid -->
+                <div class="push"></div>
+            </div><!--/.container-fluid -->
+        </div> <!-- wrapper -->
+    
+    <!-- Put this under a CC By-SA 3.0 license. -->
+    <div class="row-fluid footer">
+        <div class="span12">
+            <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
